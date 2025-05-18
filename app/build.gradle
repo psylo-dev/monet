@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'com.example.monet'
-    compileSdk 34
+    compileSdk 35
     
     defaultConfig {
         applicationId "com.example.monet"
         minSdk 19
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0"
         
@@ -49,7 +49,7 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
 
 dependencies {
     
-    implementation("org.schabi.newpipe:extractor:0.26.1")
+    implementation("com.github.TeamNewPipe:NewPipeExtractor:v0.27.0")
     implementation("com.google.android.exoplayer:exoplayer:2.19.1")
     implementation("androidx.media3:media3-session:1.4.1")
     implementation("androidx.core:core-ktx:1.13.1")
